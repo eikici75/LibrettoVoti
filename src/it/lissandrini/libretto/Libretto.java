@@ -12,8 +12,13 @@ public class Libretto {
 		this.voti = new ArrayList<Voto>();
 	}
 	
+	/**
+	 * Aggiunge un nuovo voto al libretto
+	 * 
+	 * @param v - {@link Voto} da aggiungere
+	 */
 	public void add(Voto v) {
-		
+		this.voti.add(v);
 	}
 
 }
