@@ -1,6 +1,7 @@
 package it.lissandrini.libretto;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class TestLibretto {
 
@@ -18,6 +19,8 @@ public class TestLibretto {
 		libr.add(new Voto(22, "Informatica 4", LocalDate.of(2020, 5, 16)));
 		libr.add(new Voto(22, "Informatica 3", LocalDate.of(2020, 5, 16)));
 		
+		List<Voto> venticinque = libr.CercaVoti(25);
+		System.out.println(venticinque);
 	}
 
 }
